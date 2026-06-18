@@ -321,8 +321,6 @@ async function calculateAnswer(){
     calculatedAnswer.textContent = a*b;
 }
 
-calculateAnswer();
-
 function redo(){  
     numbersForCalculator.forEach((number) => {
         number.addEventListener("change", () => {
@@ -338,9 +336,11 @@ function redo(){
     });
 }
 
+calculateAnswer();
 redo();
 
 // This is a comment to ammend
+// This is another comment to ammend
 
 // Next Project
 
