@@ -1,0 +1,261 @@
+:root{
+    --calculatedAnswerFontSize: 1.8rem;
+    --calculatedAnswerFontSizeVar: 1.8;
+    --calculatedAnswerBGHeight: (18.75px*(var(--calculatedAnswerFontSizeVar)));
+    --calculatedAnswerBGHeight2: var(--calculatedAnswerBGHeight) - 0.25;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(236, 236, 236);
+    min-width: 100vw;
+    min-height: 100vh;
+}
+.topbarItems{
+    overflow-x: scroll;
+    display: flex;
+}
+li{
+    margin: 7px;
+    list-style-type: none;
+    float: left;
+    min-width: fit-content;
+}
+main{
+    padding: 20px;
+    min-height: 100vh;
+}
+.itemsButton{
+    background-color: rgb(24, 75, 229);
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    font-size: 17px;
+    cursor: pointer;
+}
+#itemOptions{
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: right;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 12px;
+    display: none;
+}
+#confirmAddItem{
+    margin: 10px;
+    font-size: 12px;
+    width: inherit;
+}
+#itemText{
+    border: 3px solid black;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 10px;
+}
+
+/*Next project*/
+
+.numBtns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    flex-direction: column;
+    overflow: hidden;
+}
+#btns{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.chooseNums{
+    font-size: 8rem;
+    border: 3px solid black;
+    border-radius: 20px;
+    background: none;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    cursor: pointer;
+}
+#display{
+    font-size: 30px;
+    display: inherit;
+    flex-direction: row;
+}
+.numDisplay{
+    margin-left: 7px;
+}
+
+/* Next Project */
+
+.areasProject{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    margin-top: 25px;
+    flex-direction: column;
+}
+.areaContainer{
+    height: 75%;
+    width: 100%;
+    align-self: baseline;
+    margin-top: 20px;
+    display: inherit;
+    align-items: center;
+    flex-direction: row;
+    overflow: scroll;
+}
+.areas{
+    max-width: fit-content;
+    min-width: 210px;
+    height: 200px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.title{
+    font-size: 32px;
+}
+.desc{
+    max-width: 180px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.displayContainer{
+    display: inherit;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+}
+.distanceDisplay{
+    display: inherit;
+    flex-direction: row;
+    margin-top: 7px;
+}
+#saysDistance{
+    margin-right: 5px;
+}
+#directions{
+    justify-self: center;
+    align-self: center;
+    margin-top: 7px;
+}
+.menuSelect{
+    font-size: x-large;
+}
+.menuSelect select{
+    font-size: large;
+}
+
+/* Next Project */
+
+.menuCalculator{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;   
+    height: 20rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border: 0.5rem solid black;
+    border-radius: 2rem;
+}
+.inputContainer{
+    display: flex;
+    justify-content: space-evenly;
+}
+#calculatedAnswer{
+    font-size: var(--calculatedAnswerFontSize);
+    height: calc(var(--calculatedAnswerBGHeight) - 0.25px);
+}
+.rockPaperScissors{
+    height: 10rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+.RPSButton{
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    font-size: 1.8rem;
+    color: white;
+    background-color: black;
+    border-radius: 2rem;
+    padding: 0.5rem;
+    border: none;
+    cursor: pointer;
+}
+.RPSButton:hover{
+    font-size: 1.9rem;
+}
+.RPSButton:active{
+    font-size: 1.7rem;
+}
+#RPSResult{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+@media (prefers-color-scheme: dark){
+    *{
+        color: white;
+    }
+    body{
+        background-color: rgb(43, 43, 43);
+    }
+    .itemsButton{
+        background-color: rgb(61, 109, 255);
+        color: rgb(255, 255, 255);
+    }
+    #itemOptions{
+        border: 1px solid rgb(255, 255, 255);
+    }
+    #itemText{
+        border: 3px solid rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+    }
+    .chooseNums{
+        border: 3px solid rgb(255, 255, 255);
+    }
+    .areas{
+        border: 2px solid rgb(255, 255, 255);
+    }
+    select{
+        color: black;
+    }
+    select option{
+        color: black;
+    }
+    .menuCalculator{
+        border: 0.5rem solid white;
+    }
+    .RPSButton{
+        color: black;
+        background-color: white;
+    }
+}

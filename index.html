@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="topbar">
+        <ul class="topbarItems">
+        </ul>
+    </nav>
+
+    <main>
+        <button class="itemsButton" id="dispItemOptions" onclick="displayItemOptions()">Add Item</button>
+        <div id="itemOptions">
+            <input type="text" name="Item Title" id="itemText"><br>
+            <button class="itemsButton" id="confirmAddItem" onclick="confirmToAddItem()">Add Item</button>
+        </div>
+        <section class="numBtns">
+            <div id="btns">
+                <button class="chooseNums" id="3" onclick="findNum(numArray, 'three')">3</button>
+                <button class="chooseNums" id="5" onclick="findNum(numArray, 'five')">5</button>
+                <button class="chooseNums" id="17" onclick="findNum(numArray, 'seventeen')">17</button>
+            </div>
+            <div id="display">
+                <label for="numDisplay">Number: </label>
+                <p class="numDisplay"></p>
+            </div>
+        </section>
+        <section class="areasProject">
+            <div class="areaContainer">
+                <div class="areas" id="School">
+                    <h4 class="title">School</h4>
+                    <p class="desc">A place to learn and make friends</p>
+                    <p class="coordinates">13, 17</p>
+                </div>
+                <div class="areas" id="Home">
+                    <h4 class="title">Home</h4>
+                    <p class="desc">Eat, sleep, play, and more</p>
+                    <p class="coordinates">4, 30</p>
+                </div>
+                <div class="areas" id="Work">
+                    <h4 class="title">Work</h4>
+                    <p class="desc">You have a job to attend to</p>
+                    <p class="coordinates">22, 29</p>
+                </div>
+                <div class="areas" id="Mall">
+                    <h4 class="title">Mall</h4>
+                    <p class="desc">Buy things here</p>
+                    <p class="coordinates">27, 24</p>
+                </div>
+                <div class="areas" id="Grandma's House">
+                    <h4 class="title">Grandma's house</h4>
+                    <p class="desc">Where Grandma lives</p>
+                    <p class="coordinates">12, 1</p>
+                </div>
+                <div class="areas" id="Post Office">
+                    <h4 class="title">Post Office</h4>
+                    <p class="desc">A place to get and send your mail</p>
+                    <p class="coordinates">27, 10</p>
+                </div>
+                <div class="areas" id="Favorite Restaurant">
+                    <h4 class="title">Favorite Restaurant</h4>
+                    <p class="desc">Your favorite place to go out to eat</p>
+                    <p class="coordinates">31, 17</p>
+                </div>
+                <div class="areas" id="Auto Repair Shop">
+                    <h4 class="title">Auto Repair Shop</h4>
+                    <p class="desc">A place to get your car fixed</p>
+                    <p class="coordinates">23,-2</p>
+                </div>
+                <div class="areas" id="Gym">
+                    <h4 class="title">Gym</h4>
+                    <p class="desc">A place to get exercise and work out</p>
+                    <p class="coordinates">3, 6</p>
+                </div>
+                <div class="areas" id="Airport">
+                    <h4 class="title">Airport</h4>
+                    <p class="desc">A place to fly airplanes from place to place</p>
+                    <p class="coordinates">-5, 9</p>
+                </div>
+                <div class="areas" id="Pharmacy">
+                    <h4 class="title">Pharmacy</h4>
+                    <p class="desc">A place to pick up your medications</p>
+                    <p class="coordinates">2, 19</p>
+                </div>
+            </div>
+            <div class="displayContainer">
+                <div class="distanceDisplay">
+                    <p id="saysDistance">Distance: </p>
+                    <p id="distance"></p>
+                </div>
+                <p id="directions"></p>
+            </div>    
+        </section>
+        <section class="menuSelect">
+            <label for="menuSelect">Please Select a Fruit</label>
+            <select name="Fruits" id="menuSelect">
+                <option value="Starter">Enter Fruit Here</option>
+            </select>
+            <p id="fruitOutput"></p>
+        </section>
+        <section class="menuCalculator">
+            <p id="directions2"><span id="directionsHighlight">Directions: </span>Select two numbers (one for each slot) and select the "Calculate" sign to perform the calculation.</p>
+            <div class="inputContainer">
+                <div class="inputCalcDropdown">
+                    <label for="num1">Number 1: </label>
+                    <select id="num1">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    </select>
+                </div>
+                <div class="inputCalcDropdown">
+                    <label for="num2">Number 2: </label>
+                    <select id="num2">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    </select>
+                </div>
+            </div>
+            <p id="calculatedAnswer"></p>
+        </section>
+        <section class="rockPaperScissors">
+            <div id="rPSBtns">
+                <button id="rock" class="RPSButton">Rock</button>
+                <button id="paper" class="RPSButton">Paper</button>
+                <button id="scissors" class="RPSButton">Scissors</button>
+            </div>
+            <p id="RPSResult"></p>
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
