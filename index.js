@@ -383,18 +383,30 @@ function rPSButtonClicked(btn){
     }
 }
 
-/*
+const nameSearchTextArea = document.getElementById("nameSearchTextArea");
+const nameSearchNames = document.getElementById("nameSearchNames");
+const nameSearchListItems = document.getElementById("nameSearchListItems");
 
-New Project: Create a simple functionable app (this
-only needs one feature or something), have a 
-function that picks a random number or a random 
-character for a name every second or something, and 
-create an algorythm based on what gets randomly 
-generated. You can later do this as a Git, Github, or
-database project to see what you can do with so much 
-data. 
+const names = []; 
 
-*/
+for (let i = 0; i < 20; i++) {
+    let name = "";
+    let repeatNum = 4;
+    for (let i = 0; i < repeatNum; i++){
+        const character = Math.floor(Math.random() * (123 - 48) + 48);
+        if((character < 65 && character > 57) || (character < 97 && character > 90)){
+            repeatNum += 1;
+            continue;
+        }
+        else{
+            name += String.fromCharCode(character);
+        }
+    }
+    names.push(name);
+}
+
+console.log(names);
+
 /*
 
 New Project ... PRODUCT ALERT!!!:
