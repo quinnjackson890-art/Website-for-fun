@@ -407,6 +407,9 @@ for (let i = 0; i < 20; i++) {
 
 console.log(names);
 
+//new comment for version 6
+//another comment for version 7
+
 /*
 
 New Project ... PRODUCT ALERT!!!:
