@@ -220,6 +220,28 @@ main{
     font-size: 3rem;
     font-weight: bold;
 }
+.nameSearch{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#nameSearchTextArea{
+    background-color: transparent;
+    min-width: 15rem;
+    border: 6px solid black;
+    border-radius: 2rem;
+    align-content: center;
+    text-indent: 0.5rem;
+    resize: none;
+}
+#nameSearchNames{
+    overflow-x: scroll;
+}
+.nameSearchListItems{
+    cursor: pointer;
+}
 
 @media (prefers-color-scheme: dark){
     *{
@@ -257,5 +279,8 @@ main{
     .RPSButton{
         color: black;
         background-color: white;
+    }
+    #nameSearchTextArea{
+        border: 3px solid white;
     }
 }
