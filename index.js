@@ -407,8 +407,7 @@ for (let i = 0; i < 20; i++) {
 
 console.log(names);
 
-//new comment for version 6
-//another comment for version 7
+//comments 6 and 7 deleted for version 8
 
 /*
 
